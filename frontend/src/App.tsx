@@ -66,7 +66,7 @@ function App() {
   const sentMessage: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:2000/ask/ai", {
+      const res = await axios.post("https://chatbot-5thp.onrender.com/ask/ai", {
         history,
         message: msg,
       });
