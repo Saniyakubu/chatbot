@@ -13,9 +13,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://chatlink-2g7p.onrender.com",
+      "https://chatbot-5thp.onrender.com/",
       "http://localhost:2000",
-      "https://chatlink-2g7p.onrender.com/",
     ],
   })
 );
