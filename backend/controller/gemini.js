@@ -5,6 +5,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const Run = async (req, res) => {
   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
   const { message, history } = req.body;
+  console.log(message);
   if (!message) {
     return res.status(400).json({ err: "you need to provide a text" });
   }
