@@ -46,7 +46,7 @@ function App() {
 
   return (
     <main className="gap-4 w-[90%] lg:w-[60%] mx-auto">
-      <div className="relative w-full p-4 border mt-5 h-[700px] rounded-xl bg-muted/50">
+      <div className="relative w-full p-4 border mt-5 h-[600px] lg:h-[700px] rounded-xl bg-muted/50">
         <Badge variant="outline" className="absolute right-3 top-3">
           Output
         </Badge>
@@ -75,7 +75,7 @@ function App() {
           })}
         </ul>
       </div>
-      <div className="fixed lg:w-[60%] mx-auto bottom-5 left-0 right-0">
+      <div className="fixed w-[90%] bottom-2 lg:w-[60%] mx-auto lg:bottom-5 left-0 right-0">
         <form
           onSubmit={sentMessage}
           className="w-full overflow-hidden rounded-lg bg-muted/50 focus-within:ring-1 focus-within:ring-ring"
@@ -83,13 +83,13 @@ function App() {
           <Label htmlFor="message" className="sr-only">
             Message
           </Label>
-          <div className="flex items-center ">
+          <div className="flex items-center">
             <Textarea
               id="message"
               value={msg}
               onChange={(e) => setMsg(e.target.value)}
               placeholder="Type your message here..."
-              className="h-full p-3 text-xl text-black border-0 shadow-none resize-none bg-slate-300 min-h-12 focus-visible:ring-0"
+              className="h-full p-3 text-lg text-black border-0 shadow-none resize-none lg:text-xl bg-slate-300 min-h-12 focus-visible:ring-0"
             />
             <Button
               disabled={!!loading}
