@@ -16,30 +16,8 @@ function App() {
   const [history, setHistory] = useState<any[]>([]);
   const [msg, setMsg] = useState(" ");
   const [loading, setLoading] = useState(false);
-  // console.log(msg);
-  // console.log(history);
-  //  setHistory(() => [
-  //       ...history,
-  //       {
-  //         role: "user",
-  //         parts: [{ text: setMsg }],
-  //       },
-  //     ]);
-  // const setMessage = async (value: any) => {
-  //   try {
-  //     const res = await axios.post("http://localhost:2000/", {
-  //       history,
-  //       message: msg,
-  //     });
-  //     const data = await res.data;
-  //     console.log(data);
-  //   } catch (error) {}
-  // };
-  console.log(history);
-  const userMessage = [
-    { text: msg },
-    { text: "im sani yakubu and i used the api of gemini to make my own Ai" },
-  ];
+
+  const userMessage = [{ text: msg }];
   const sentMessage: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     setLoading(true);
