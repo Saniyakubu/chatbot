@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
+      "https://chatbot-5thp.onrender.com",
       "https://chatbot-5thp.onrender.com/",
       "http://localhost:2000",
     ],
