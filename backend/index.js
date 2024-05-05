@@ -6,9 +6,6 @@ import cors from "cors";
 import router from "./routes/router.js";
 const app = express();
 const PORT = process.env.PORT || 5000;
-// const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const __dirname = path.resolve();
-app.use(express.json());
 app.use(
   cors({
     origin: [
@@ -16,8 +13,13 @@ app.use(
       "https://chatbot-5thp.onrender.com/",
       "http://localhost:2000",
     ],
+    credentials: true,
   })
 );
+// const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const __dirname = path.resolve();
+app.use(express.json());
+
 app.use(express.urlencoded({ extended: false }));
 app.use("/ask", router);
 
