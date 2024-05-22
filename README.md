@@ -2,7 +2,7 @@
 
 AI Chatbot is an advanced chatbot application designed to provide intelligent and contextual responses to user queries. By leveraging the Gemini API, this chatbot retains conversation context for more meaningful interactions.
 
-![AI Chatbot Logo](images/Aichatbot.png)
+![AI Chatbot Logo](/Aichatbot.png)
 
 ## Features
 
@@ -21,7 +21,7 @@ AI Chatbot is an advanced chatbot application designed to provide intelligent an
 
 ### Chat Interface
 
-![Chat Interface](images/Aichatbot.png)
+![Chat Interface](/Aichatbot.png)
 
 ## Getting Started
 
